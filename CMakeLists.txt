@@ -22,7 +22,6 @@ add_custom_command(
 )
 
 if (ADD_TEST)
-    message(hi)
     enable_testing()
     add_subdirectory("tests")
 endif()
