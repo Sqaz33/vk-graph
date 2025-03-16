@@ -1,10 +1,8 @@
-#include "../include/solution.hpp"
+#include "solution.hpp"
 
 #include <queue>
 
-
 namespace solution {
-// поиск в ширину
     std::vector<int> bfs(const graph::Graph& g, int startV) {
         std::vector<int> resNVisited(g.size(), -1);
         std::queue<int> queue;

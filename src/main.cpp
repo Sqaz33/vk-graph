@@ -4,12 +4,12 @@
 #include <exception>
 #include <stdexcept>
 
-#include "../include/graph.hpp"
-#include "../include/solution.hpp"
+#include "graph.hpp"
+#include "solution.hpp"
 
-graph::Graph readGraph(std::istream& in, 
-                    long long vertexesCount, 
-                    long long edgesCount) 
+static graph::Graph readGraph(std::istream& in, 
+                              long long vertexesCount, 
+                              long long edgesCount) 
 {   
     if (vertexesCount < 0 || edgesCount < 0) {
         throw std::logic_error("It is impossible to create a graph.");

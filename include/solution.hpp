@@ -8,7 +8,7 @@
 #include "graph.hpp"
 
 namespace solution {
-
+// поиск в ширину
 std::vector<int> bfs(const graph::Graph& g, int startV);
 
 }
